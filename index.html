@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container nav-content">
+            <!-- Logo -->
+            <a href="#accueil" class="logo">
+                <span class="logo-part">Port</span><span class="logo-accent">folio</span>
+            </a>
+            
+            <!-- Menu mobile -->
+            <button class="menu-btn" id="menuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <!-- Liens navigation -->
+            <ul class="nav-list" id="navList">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Section Hero -->
+    <section class="hero" id="accueil">
+        <div class="container hero-content">
+            <img src="c:\Users\Coconut\Downloads\Hero-min.jpg" alt="Protfolio Image" class ="hero-image" loading ="lazy">
+            <h1>Créateur Web Passionné</h1>
+            <p>Je développe des sites modernes, rapides et adaptés à tous les écrans.</p>
+            <a href="#projets" class="btn">Voir mes réalisations</a>
+        </div>
+    </section>
+
+    <!-- Section Cartes -->
+    <section class="cartes" id="projets">
+        <div class="container">
+            <h2 class="titre-section">Mes Projets</h2>
+            
+            <div class="grille-cartes">
+                <!-- Carte 1 -->
+                <div class="carte">
+                    <img src="c:\Users\Coconut\Downloads\carte1-min.jpg" alt="Projet web 2" loading="lazy">
+                    <div class="carte-texte">
+                        <h3>Site Vitrine</h3>
+                        <p>Site responsive pour une entreprise locale avec design moderne.</p>
+                    </div>
+                </div>
+                
+                <!-- Carte 2 -->
+                <div class="carte">
+                    <img src="c:\Users\Coconut\Downloads\carte2.jpg" alt="Projet web 2" loading="lazy">
+                    <div class="carte-texte">
+                        <h3>Application Web</h3>
+                        <p>Application de gestion avec tableau de bord interactif.</p>
+                    </div>
+                </div>
+                
+                <!-- Carte 3 -->
+                <div class="carte">
+                    <img src="c:\Users\Coconut\Downloads\carte3-min.jpg" alt="Projet web 3" loading="lazy">
+                    <div class="carte-texte">
+                        <h3>E-commerce</h3>
+                        <p>Boutique en ligne sécurisée avec système de paiement.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Présentation -->
+    <section class="presentation">
+        <div class="container">
+            <div class="presentation-contenu">
+                <div class="presentation-image">
+                    <img src="c:\Users\Coconut\Downloads\Ma photo-min.jpeg" alt="Ma photo" loading="lazy">
+                </div>
+                
+                <div class="presentation-texte">
+                    <h2>Qui suis-je ?</h2>
+                    <p>Je suis développeur web avec une passion pour la création d'expériences numériques. J'aime transformer des concepts en interfaces fonctionnelles et esthétiques.</p>
+                    <p>Mon expertise couvre les technologies front-end modernes avec un focus sur l'accessibilité et les performances.</p>
+                    <p>Chaque projet est une nouvelle aventure créative où j'applique mes compétences techniques pour répondre aux besoins spécifiques des utilisateurs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Formulaire -->
+    <section class="formulaire" id="contact">
+        <div class="container">
+            <h2 class="titre-section">Écrivez-moi</h2>
+            
+            <form class="form-contact" id="formContact">
+                <div class="groupe-form">
+                    <label for="email">Votre email</label>
+                    <input type="email" id="email" placeholder="exemple@email.com" required>
+                </div>
+                
+                <div class="groupe-form">
+                    <label for="message">Votre message</label>
+                    <textarea id="message" rows="6" placeholder="Bonjour, je souhaite..." required></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-form">
+                    <i class="fas fa-paper-plane"></i> Envoyer
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© <span id="annee"></span> - Portfolio réalisé par <strong>Votre Nom</strong></p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
